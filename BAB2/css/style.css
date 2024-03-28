@@ -1,0 +1,255 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+header {
+    text-align: left; /* Menempatkan teks di pinggir kiri */
+    padding: 50px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    color: #666;
+}
+
+main {
+    text-align: center;
+    padding: 50px 0;
+}
+
+
+.logo {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.logo img {
+    top: 5px; 
+    left: -20px; 
+    padding: 20px; 
+
+}
+
+
+section {
+    max-width: 400px;
+    margin: 0 auto;
+    text-align: left; /* Menempatkan teks di pinggir kiri */
+}
+
+section h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+}
+
+.navbar {
+    background-color: #FC819E;
+    padding: 10px 0;
+    display: flex; /* Menggunakan flexbox */
+    justify-content: flex-end;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    
+}
+
+.navbar a:hover {
+    color: #C6EBC5;
+}
+.navbar a:last-child {
+    margin-right: 20px; 
+}
+
+.logo login {
+    width: 100px;
+    height: auto;
+}
+
+
+nav {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+nav a {
+    margin: 0 20px;
+    color: #fff;
+    transition: color 0.3s ease;
+}
+
+
+
+main {
+    text-align: center;
+}
+
+.form-login {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.form-login h3 {
+    margin-bottom: 20px;
+    color: #AD88C6;
+}
+
+.form-login input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-login button {
+    background-color: #AD88C6;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.form-login button:hover {
+    background-color: #C6EBC5;
+}
+
+.form-login a {
+    display: block;
+    color: #AD88C6;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #fc819e;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+@media only screen and (max-width: 768px) {
+    header h1 {
+        font-size: 20px;
+    }
+
+    header p {
+        font-size: 14px;
+    }
+
+    section h2 {
+        font-size: 18px;
+    }
+
+    section p {
+        font-size: 12px;
+    }
+
+    .navbar {
+        justify-content: center;
+    }
+
+    .navbar a {
+        margin: 0 5px;
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
+
+
+@media only screen and (max-width: 576px) {
+    header h1 {
+        font-size: 18px;
+    }
+
+    header p {
+        font-size: 12px;
+    }
+
+    section h2 {
+        font-size: 16px;
+    }
+
+    section p {
+        font-size: 10px;
+    }
+
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        margin: 5px 0;
+        font-size: 12px;
+    }
+
+    footer {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 414px) {
+    header h1 {
+        font-size: 16px;
+    }
+
+    header p {
+        font-size: 10px;
+    }
+
+    section h2 {
+        font-size: 14px;
+    }
+
+    section p {
+        font-size: 8px;
+    }
+
+    .navbar {
+        padding: 10px 0;
+    }
+
+    .navbar a {
+        font-size: 10px;
+    }
+
+    footer {
+        font-size: 8px;
+    }
+   
+}
