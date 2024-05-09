@@ -8,35 +8,34 @@
 	<!-- Boxicons CDN Link -->
 	<link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>NutriTrack Admin | Categories Entry</title>
+	<title>Nutrisi Admin | Categories</title>
 </head>
 
 <body>
 	<div class="sidebar">
 		<div class="logo-details">
 			<i class="bx bx-category"></i>
-			<span class="logo_name">NutriTracks</span>
+			<span class="logo_name">NutriTrack</span>
 		</div>
 		<ul class="nav-links">
 			<li>
-				<a href="../admin.html" class="active">
+				<a href="../admin.php" class="active">
 					<i class="bx bx-grid-alt"></i>
 					<span class="links_name">Dashboard</span>
 				</a>
 			</li>
 			<li>
-				<a href="categories-entry.html">
+				<a href="categoris/categories.php">
 					<i class="bx bx-box"></i>
 					<span class="links_name">Categories</span>
 				</a>
 			</li>
 			<li>
-				<a href="../transaction/transaction.html">
+				<a href="trancation/Trancation.php">
 					<i class="bx bx-list-ul"></i>
 					<span class="links_name">Transaction</span>
 				</a>
 			</li>
-			<li>
 				<a href="#">
 					<i class="bx bx-log-out"></i>
 					<span class="links_name">Log out</span>
@@ -54,22 +53,34 @@
 			</div>
 		</nav>
 		<div class="home-content">
-			<h3>Input Categories</h3>
-			<div class="form-login">
-				<form action="">
-					<label for="categories">Categories</label>
-					<input class="input" type="text" name="categories" id="categories" placeholder="Categories" />
-					<label for="categories">Keluhan</label>
-					<input class="input" type="text" name="price" id="price" placeholder="Keluhan" />
-					<label for="categories">Description</label>
-					<input class="input" type="text" name="Description" id="Description" placeholder="Description" />
-					<label for="photo">Photo</label>
-					<input type="file" name="photo" id="photo" style="margin-bottom: 20px" />
-					<button type="submit" class="btn btn-simpan" name="simpan">
-						Simpan
-					</button>
-				</form>
-			</div>
+			<h3>Categories</h3>
+			<button type="button" class="btn btn-tambah">
+				<a href="categories-entry.php">Tambah Data</a>
+			</button>
+			<table class="table-data">
+				<thead>
+					<tr>
+						<th scope="col" style="width: 20%">Photo</th>
+						<th>Categories</th>
+						<th scope="col" style="width: 20%">Description</th>
+						<th scope="col" style="width: 15%">Keluhan</th>
+						<th scope="col" style="width: 30%">Action</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td><img src="img/fitcgipa.jpeg" width="100" height="100"></td>
+						<td>Makanan DIet</td>
+						<td>Fitbar merupakan snack bar yang dikemas secara individu sebagai camilan yang lebih sehat karena mengandung serat tinggi dan nggak mengandung pemanis buatan.</td>
+						<td>Obesitas
+						</td>
+						<td>
+							<button class="btn-edit" onclick="editCategory()">Edit</button>
+							<button class="btn-delete" onclick="deleteCategory()">Hapus</button>
+						</td>
+					</tr>
+				</tbody>
+			</table>
 		</div>
 	</section>
 	<script>

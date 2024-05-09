@@ -15,10 +15,10 @@
 	<body>
 		
             <div class="navbar">
-                    <a href="home.html">Home</a></li>
-                    <a href="about.html">about us</a></li>
-                    <a href="service.html">Service</a></li>
-                    <a href="Login.html">Login</a></li>
+                    <a href="home.php">Home</a></li>
+                    <a href="about.php">about us</a></li>
+                    <a href="service.php">Service</a></li>
+                    <a href="Login.php">Login</a></li>
                     </div>
                     
                     <div class="slideshow-container">

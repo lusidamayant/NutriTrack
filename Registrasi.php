@@ -19,10 +19,10 @@
 				<div class="logo">
 					<img src="assets/img/Makanan.jpeg" alt="">
 				</div>
-        <a href="home.html">Home</a>
-        <a href="about.html">about us</a>
-        <a href="service.html">Service</a>
-        <a href="Login.html">Login</a>
+        <a href="home.php">Home</a>
+        <a href="about.php">about us</a>
+        <a href="service.php">Service</a>
+        <a href="Login.php">Login</a>
 		</div>
 		
 	</header>
@@ -40,6 +40,7 @@
             <input type="password" id="Konfirmasi"placeholder="Konfirmasi" /> <br /><br />
 	</form>
 	<button type="submit">Register</button>
+	<a href="Login.php">Lakukan Login</a>
 		</div>
 	</main>
 	<footer>
