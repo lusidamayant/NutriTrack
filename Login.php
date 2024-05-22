@@ -26,47 +26,49 @@
             </div>
             <div class="form-login">
                 <h3>Login</h3>
-                <form action="">
-                    <label for="Username"></label> <br />
-                    <input type="text" id="Username" placeholder="Username" /> <br />
-                    <label for="Password"></label> <br />
-                    <input type="password"  id="Password" placeholder="Password"/> <br /><br />
-                    <button type="button" onclick="submitFormlogin()">Login</button>
+                <form action="login-proses.php" method="post">
+                <input class="input" type="text" name="username"
+			    placeholder="Username" />
+	         <input class="input" type="password" name="password"
+			    placeholder="Password" />
+		   <button type="submit" class="button" name="login"  
+                      id="login"> Login
+                    <!-- <button type="button" onclick="submitFormlogin()">Login</button> -->
                 </form>
-             <a href="Registrasi.php">No Account? Register Here</a>
+             <a href="registrasi.php">No Account? Register Here</a>
 		    </div>
 		</main>
 		<footer>
 			<h4>&copy; 2024 NutriTrack. All rights reserved.</h4>
 		</footer>
         <script>
-       async function submitFormlogin() {
-            var username = document.getElementById("Username").value;
-            var password = document.getElementById("Password").value;
+    //    async function submitFormlogin() {
+    //         var username = document.getElementById("Username").value;
+    //         var password = document.getElementById("Password").value;
             
-            if (username.trim() === "" || password.trim() === "") {
-                alert("Periksa kembali isi pada setaip kolom!");
-                return;
-            }
+    //         if (username.trim() === "" || password.trim() === "") {
+    //             alert("Periksa kembali isi pada setaip kolom!");
+    //             return;
+    //         }
            
-            // Menggunakan PopUp Box untuk memberikan pesan kepada pengguna
-            var confirmation = confirm("Apakah Anda yakin ingin melakukan login?");
-            if (confirmation) {
+    //         Menggunakan PopUp Box untuk memberikan pesan kepada pengguna
+    //         var confirmation = confirm("Apakah Anda yakin ingin melakukan login?");
+    //         if (confirmation) {
                 
-                await new Promise(resolve => setTimeout(resolve, 2000));
-                alert("Login berhasil!"); 
-                // Simpan data pengguna ke dalam localStorage
-                localStorage.setItem("Username", Username);
+    //             await new Promise(resolve => setTimeout(resolve, 2000));
+    //             alert("Login berhasil!"); 
+    //             Simpan data pengguna ke dalam localStorage
+    //             localStorage.setItem("Username", Username);
                
-                window.location.href = "admin.php";
-            }
+    //             window.location.href = "admin.php";
+    //         }
 
-        }
+    //     }
         <?php
-        // Start session
+       // Start session
         session_start();
 
-        // Jika formulir telah dikirimkan
+       // Jika formulir telah dikirimkan
         if ($_SERVER["REQUEST_METHOD"] === "POST") {
             // Ambil nilai dari formulir
             $Username = $_POST['Username'];
@@ -85,7 +87,7 @@
         ?>
 
 
-        </script>
+        // </script>
 	</center>
 	</body>
 </html>

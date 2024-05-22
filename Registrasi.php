@@ -19,27 +19,27 @@
 				<div class="logo">
 					<img src="assets/img/Makanan.jpeg" alt="">
 				</div>
-        <a href="home.php">Home</a>
-        <a href="about.php">about us</a>
-        <a href="service.php">Service</a>
-        <a href="Login.php">Login</a>
+        <a href="index.php">Home</a>
+        <a href="index.php">about us</a>
+        <a href="index.php">Service</a>
+		<a href="Login.php" class="btn_login">Login</a>
 		</div>
 		
 	</header>
 	<main>
-		<div class="form-login">
-		<h3>Register</h3>
-		<form action="">
-			<label for="firstname"></label> <br />
-            <input type="text" id="firstname" placeholder="Nama Lengkap" /> <br />
-            <label for="Username"></label> <br />
-            <input type="text" id="Username" placeholder="Username"/> <br />
-            <label for="Password"></label> <br />
-            <input type="password" id="Password" placeholder="Password"/> <br />
-            <label for="Konfirmasi"></label> <br />
-            <input type="password" id="Konfirmasi"placeholder="Konfirmasi" /> <br /><br />
-	</form>
-	<button type="submit">Register</button>
+	<div class="form-login">
+		  <h3>Register</h3>
+		  <form action="register-proses.php" method="post">
+		    <input class="input" type="email" name="email"
+					placeholder="Email" />
+		    <input class="input" type="text" name="username"
+					placeholder="Username"/>
+		    <input class="input" type="password" name="password"
+				      placeholder="Password" />
+  		    <button type="submit" class="btn_login" name="register"
+				id="register">
+				Register
+		    </button>
 	<a href="Login.php">Lakukan Login</a>
 		</div>
 	</main>
