@@ -7,7 +7,7 @@
 	<link rel="stylesheet" href="css/admin.css" />
 	<link href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css" rel="stylesheet" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Catshop Admin</title>
+	<title>Nutritrack Admin</title>
 </head>
 
 <body>
@@ -30,26 +30,17 @@
 				</a>
 			</li>
 			<li>
-				<a href="trancation/Trancation.php">
+				<a href="trancation/nutrient_intake.php">
 					<i class="bx bx-list-ul"></i>
-					<span class="links_name">Meals</span>
+					<span class="links_name">Nutrient Intake</span>
 				</a>
 			</li>
 			<li>
-				<a href="trancation/Trancation.php">
-					<i class="bx bx-list-ul"></i>
-					<span class="links_name">Meals Food</span>
+				<a href="logout.php">
+					<i class="bx bx-log-out"></i>
+					<span class="links_name">Log out</span>
 				</a>
 			</li>
-			
-		<li>
-		<a href="logout.php">
-			<i class="bx bx-log-out"></i>
-			<span class="links_name">Log out</span>
-		</a>
-		</li>
-
-
 		</ul>
 	</div>
 	<section class="home-section">
@@ -62,11 +53,28 @@
 			</div>
 		</nav>
 		<div class="home-content">
-			<h2 id="text">
-				
-		</div>
-
-		</div>
+			<h2 id="text"></h2>
+			<div id="date" style="margin-bottom: 20px;"></div>
+			<div class="cardBox">
+			<div class="card">
+					<div>
+						<div class="numbers">1,042</div>
+						<div class="cardName">Food</div>
+					</div>
+					<div class="iconBx">
+						<i class="bx bx-dish"></i>
+					</div>
+				</div>
+				<div class="card">
+                    <div>
+                        <div class="numbers">80</div>
+                        <div class="cardName">Nutrient Intake</div>
+                    </div>
+                    <div class="iconBx">
+                        <i class="bx bx-dish"></i>
+                    </div>
+                </div>
+			
 	</section>
 	<script>
 		let sidebar = document.querySelector(".sidebar");
@@ -79,13 +87,7 @@
 		};
 
 		function myFunction() {
-			const months = ["Januari", "Februari", "Maret", "April", "Mei",
-				"Juni", "Juli", "Agustus", "September",
-				"Oktober", "November", "Desember"
-			];
-			const days = ["Minggu", "Senin", "Selasa", "Rabu", "Kamis",
-				"Jumat", "Sabtu"
-			];
+			
 			let date = new Date();
 			jam = date.getHours();
 			tanggal = date.getDate();
@@ -119,8 +121,51 @@
 				document.getElementById("text").insertAdjacentText("afterbegin", "Selamat Malam");
 			}
 			myFunction();
+			getWeather();
 		};
+
+	
 	</script>
+	<style>
+		.cardBox {
+			position: relative;
+			width: 100%;
+			padding: 20px;
+			display: grid;
+			grid-template-columns: repeat(3, 1fr);
+			grid-gap: 50px;
+		}
+
+		.cardBox .card {
+			position: relative;
+			padding: 20px;
+			border-radius: 20px;
+			display: flex;
+			justify-content: space-between;
+			cursor: pointer;
+			box-shadow: 0 10px 25px rgba(0, 0, 0, 0.20);
+		}
+
+		.cardBox .card .numbers {
+			position: relative;
+			font-weight: 500;
+			font-size: 2.5rem;
+		}
+
+		.cardBox .card .cardName {
+			font-size: 1.3rem;
+			margin-top: 5px;
+		}
+
+		.cardBox .card .iconBx {
+			font-size: 4.5rem;
+			color: darkslateblue;
+		}
+
+		.cardBox .card:hover {
+			background: #c7c0e9;
+		}
+	</style>
 
 </body>
 

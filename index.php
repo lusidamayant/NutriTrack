@@ -121,9 +121,9 @@
             
 			
 			<main>
-                <section>
+                <script>
                    
-                </section> 
+                </script> 
                 
         
             </main>
